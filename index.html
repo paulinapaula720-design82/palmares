@@ -1,68 +1,138 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PALMARES — Załatwiamy sprawy w Hiszpanii</title>
-  <meta name="description" content="PALMARES — załatwiamy sprawy w Hiszpanii. Reprezentacja firm, lokale, spotkania, formalności i zadania na miejscu." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palmares — Twój polski partner biznesowy na Majorce</title>
+  <meta name="description" content="Palmares reprezentuje polskie firmy na Majorce i realizuje konkretne zadania biznesowe w Hiszpanii.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="top">
-  <a href="#start" class="brand"><span class="brand-symbol">P</span><span><strong>PALMARES</strong><small>Twój człowiek w Hiszpanii</small></span></a>
-  <nav><a href="#zadania">Zadania</a><a href="#proces">Proces</a><a href="#kontakt">Kontakt</a></nav>
+<header class="site-header">
+  <a class="brand" href="#start" aria-label="Palmares">
+    <span class="brand-mark">P</span>
+    <span class="brand-text">
+      <strong>PALMARES</strong>
+      <small>TWÓJ CZŁOWIEK W HISZPANII</small>
+    </span>
+  </a>
+  <nav class="nav">
+    <a href="#o-mnie">O mnie</a>
+    <a href="#uslugi">Usługi</a>
+    <a href="#proces">Proces współpracy</a>
+    <a href="#dlaczego">Dlaczego Palmares</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="top-cta" href="https://wa.me/34625032815">Umów rozmowę</a>
 </header>
 
 <main id="start">
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-inner">
-    <p class="eyebrow">Polska ↔ Hiszpania</p>
-    <h1>Załatwiamy sprawy w Hiszpanii.</h1>
-    <p class="lead">Masz zadanie do wykonania na miejscu? Palmares reprezentuje Twój interes, organizuje działania i doprowadza sprawy do końca.</p>
-    <div class="actions"><a class="button primary" href="https://wa.me/34625032815">Porozmawiajmy</a><a class="button secondary" href="#zadania">Zobacz zadania</a></div>
-  </div>
-</section>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="kicker">MAJORKA · HISZPANIA</p>
+      <h1>Twój polski<br>partner biznesowy<br>na <span>Majorce.</span></h1>
+      <div class="hero-line"></div>
+      <h2>Działamy po hiszpańsku.<br><span>Rozmawiamy po polsku.</span></h2>
+      <p class="hero-description">
+        Reprezentujemy polskie firmy w Hiszpanii i realizujemy konkretne zadania na miejscu.
+        Ty rozwijasz swój biznes. My zajmujemy się resztą.
+      </p>
+      <a class="button" href="https://wa.me/34625032815">Umów bezpłatną rozmowę</a>
+    </div>
+    <div class="hero-photo" role="img" aria-label="Paulina, założycielka Palmares, przy biurku"></div>
+  </section>
 
-<section class="short"><p>Nie musisz być w Hiszpanii. Masz tam swojego człowieka.</p></section>
+  <section class="quick-facts">
+    <article><span class="icon">⌖</span><div><strong>Siedziba: Majorka</strong><p>Działamy stacjonarnie na wyspie.</p></div></article>
+    <article><span class="icon">↗</span><div><strong>Pozostała Hiszpania</strong><p>Realizujemy zlecenia indywidualnie. Koszty dojazdu i pobytu ustalamy osobno.</p></div></article>
+    <article><span class="icon">✓</span><div><strong>Raport po realizacji</strong><p>Jasne podsumowanie wykonanych działań.</p></div></article>
+  </section>
 
-<section id="zadania" class="section">
-  <div class="heading"><p class="eyebrow">Zadania</p><h2>Co mogę zrobić dla Twojej firmy?</h2></div>
-  <div class="tasks">
-    <div><span>01</span><h3>Znaleźć lokal</h3></div>
-    <div><span>02</span><h3>Spotkać się z kontrahentem</h3></div>
-    <div><span>03</span><h3>Zweryfikować ofertę</h3></div>
-    <div><span>04</span><h3>Sprawdzić wykonawcę</h3></div>
-    <div><span>05</span><h3>Załatwić formalności organizacyjne</h3></div>
-    <div><span>06</span><h3>Zrealizować indywidualne zadanie</h3></div>
-  </div>
-</section>
+  <section id="uslugi" class="section services">
+    <div class="section-heading">
+      <p>JAK MOGĘ POMÓC TWOJEJ FIRMIE</p>
+      <h2>Konkretne zadania. Jasny efekt.</h2>
+    </div>
+    <div class="service-grid">
+      <article><span>01</span><h3>Reprezentuję Twoją firmę</h3><p>Pojadę na spotkanie, przedstawię Twoją firmę, przekażę materiały i przygotuję raport.</p></article>
+      <article><span>02</span><h3>Wyszukuję i znajduję</h3><p>Lokale, biura, magazyny, showroomy, producentów, dostawców i usługodawców.</p></article>
+      <article><span>03</span><h3>Sprawdzam na miejscu</h3><p>Obejrzę lokal lub magazyn, wykonam zdjęcia, sprawdzę otoczenie i potwierdzę informacje.</p></article>
+      <article><span>04</span><h3>Nawiązuję kontakt</h3><p>Zadzwonię, napiszę po hiszpańsku, umówię spotkanie i przekażę odpowiedzi.</p></article>
+      <article><span>05</span><h3>Organizuję formalności</h3><p>Skontaktuję się z urzędem, gestorem, kancelarią lub księgowym i umówię wizytę.</p></article>
+      <article><span>06</span><h3>Realizuję zadania indywidualne</h3><p>Masz konkretną sprawę do załatwienia w Hiszpanii? Opisz ją. Jeśli możemy pomóc — zrobimy to.</p></article>
+    </div>
+  </section>
 
-<section id="proces" class="section process-section">
-  <div class="heading"><p class="eyebrow">Proces</p><h2>Prosto. Konkretnie. Bez tracenia czasu.</h2></div>
-  <div class="process">
-    <div><strong>1</strong><p>Mówisz, czego potrzebujesz.</p></div>
-    <div><strong>2</strong><p>Ustalamy zakres i koszt.</p></div>
-    <div><strong>3</strong><p>Działam w Hiszpanii.</p></div>
-    <div><strong>4</strong><p>Otrzymujesz efekt.</p></div>
-  </div>
-</section>
+  <section class="split-section">
+    <div id="proces" class="panel">
+      <p class="label">PROCES WSPÓŁPRACY</p>
+      <h2>Prosto, jasno, skutecznie</h2>
+      <div class="steps">
+        <div><b>1</b><strong>Rozmowa</strong><p>Opisujesz zadanie i potrzeby.</p></div>
+        <div><b>2</b><strong>Plan i wycena</strong><p>Otrzymujesz zakres i jasną wycenę.</p></div>
+        <div><b>3</b><strong>Działanie</strong><p>Realizuję zadanie na miejscu.</p></div>
+        <div><b>4</b><strong>Raport</strong><p>Otrzymujesz efekt i podsumowanie.</p></div>
+      </div>
+    </div>
+    <div id="dlaczego" class="panel">
+      <p class="label">DLACZEGO PALMARES?</p>
+      <h2>Współpraca, która daje spokój</h2>
+      <ul class="check-list">
+        <li>Mówisz po polsku — rozumiem i działam.</li>
+        <li>Znam lokalny rynek, ludzi i procedury.</li>
+        <li>Działam szybko, elastycznie i dyskretnie.</li>
+        <li>Każde zlecenie ma jasno ustalony zakres.</li>
+        <li>Nie obiecuję rzeczy, których nie mogę zrobić.</li>
+      </ul>
+    </div>
+  </section>
 
-<section class="section person">
-  <div class="person-text"><p class="eyebrow">Na miejscu</p><h2>Paulina. Twój człowiek w Hiszpanii.</h2>
-  <p>Komunikacja po polsku. Działanie lokalnie po hiszpańsku. Bez obiecywania rzeczy, których nie da się zrobić.</p>
-  <p>Jeśli mogę pomóc — powiem jak. Jeśli nie mogę — powiem to uczciwie.</p></div>
-  <div class="person-photo"><img src="assets/paulina.jpg" alt="Paulina — Palmares"></div>
-</section>
+  <section class="coverage">
+    <div class="coverage-image"></div>
+    <div class="coverage-card">
+      <p class="label">GDZIE DZIAŁAMY?</p>
+      <h2>Majorka — obsługa stacjonarna</h2>
+      <p>Tu realizujemy większość zleceń i możemy działać bardzo szybko. Jesteśmy na miejscu.</p>
+    </div>
+    <div class="coverage-card">
+      <p class="label">POZOSTAŁE REGIONY HISZPANII</p>
+      <h2>Indywidualna realizacja</h2>
+      <p>Wybrane zlecenia realizujemy po ustaleniu zakresu, terminu oraz kosztów dojazdu i pobytu.</p>
+    </div>
+  </section>
 
-<section class="manifest"><p>Nie sprzedaję raportów. Realizuję zadania.</p></section>
+  <section id="o-mnie" class="about">
+    <div>
+      <p class="label">O MNIE</p>
+      <h2>Jestem Paulina.</h2>
+      <p>Mieszkam na Majorce i wspieram polskie firmy w realizacji konkretnych zadań w Hiszpanii. Łączę polską komunikację z działaniem po hiszpańsku i lokalną obecnością na miejscu.</p>
+    </div>
+    <blockquote>„Ty rozwijasz swój biznes. My zajmujemy się resztą w Hiszpanii.”</blockquote>
+  </section>
 
-<section id="kontakt" class="contact">
-  <p class="eyebrow">Kontakt</p><h2>Co chcesz załatwić w Hiszpanii?</h2>
-  <div class="actions center"><a class="button primary contactbtn" href="https://wa.me/34625032815">WhatsApp: +34 625 032 815</a><a class="button secondary contactbtn" href="mailto:paulinapaula720@gmail.com">paulinapaula720@gmail.com</a></div>
-</section>
+  <section id="kontakt" class="contact">
+    <div>
+      <p class="label">KONTAKT</p>
+      <h2>Porozmawiajmy o Twoim zadaniu</h2>
+      <p>Pierwsza rozmowa jest bezpłatna i niezobowiązująca.</p>
+    </div>
+    <div class="contact-actions">
+      <a href="tel:+34625032815">+34 625 032 815</a>
+      <a href="https://wa.me/34625032815">WhatsApp</a>
+      <a href="mailto:paulinapaula720@gmail.com">paulinapaula720@gmail.com</a>
+    </div>
+  </section>
 </main>
 
-<footer><strong>PALMARES</strong><span>Załatwiamy sprawy w Hiszpanii.</span></footer>
+<footer>
+  <div class="brand compact">
+    <span class="brand-mark">P</span>
+    <span class="brand-text"><strong>PALMARES</strong><small>TWÓJ CZŁOWIEK W HISZPANII</small></span>
+  </div>
+  <span>Majorka · Hiszpania</span>
+</footer>
 </body>
 </html>
