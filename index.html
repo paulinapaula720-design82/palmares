@@ -5,25 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Palmares — Twój polski partner biznesowy na Majorce</title>
   <meta name="description" content="Reprezentujemy polskie firmy na Majorce i realizujemy konkretne zadania biznesowe w Hiszpanii.">
+  <meta name="theme-color" content="#0c2948">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="#start">
+  <a class="brand" href="#start" aria-label="Palmares — strona główna">
     <span class="brand-mark">P</span>
-    <span class="brand-copy"><strong>PALMARES</strong><small>TWÓJ CZŁOWIEK W HISZPANII</small></span>
+    <span class="brand-copy">
+      <strong>PALMARES</strong>
+      <small>TWÓJ CZŁOWIEK W HISZPANII</small>
+    </span>
   </a>
-  <nav>
+
+  <button class="menu-button" aria-expanded="false" aria-controls="main-nav" aria-label="Otwórz menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="main-nav">
     <a href="#o-mnie">O mnie</a>
     <a href="#uslugi">Usługi</a>
     <a href="#proces">Proces współpracy</a>
     <a href="#dlaczego">Dlaczego Palmares</a>
     <a href="#kontakt">Kontakt</a>
   </nav>
-  <a class="nav-cta" href="https://wa.me/34625032815" target="_blank" rel="noopener">Umów rozmowę <span>→</span></a>
+
+  <a class="nav-cta" href="https://wa.me/34625032815" target="_blank" rel="noopener">
+    Umów rozmowę <span>→</span>
+  </a>
 </header>
 
 <main id="start">
@@ -33,27 +46,32 @@
       <h1>Twój polski<br>partner biznesowy<br>na <em>Majorce.</em></h1>
       <div class="gold-rule"></div>
       <h2>Działamy po hiszpańsku.<br><em>Rozmawiamy po polsku.</em></h2>
-      <p class="lead">Reprezentujemy polskie firmy w Hiszpanii i realizujemy konkretne zadania na miejscu. Ty rozwijasz swój biznes. My zajmujemy się resztą.</p>
-      <a class="button" href="https://wa.me/34625032815" target="_blank" rel="noopener">Umów bezpłatną rozmowę <span>→</span></a>
+      <p class="lead">
+        Reprezentujemy polskie firmy w Hiszpanii i realizujemy konkretne zadania na miejscu.
+        Ty rozwijasz swój biznes. My zajmujemy się resztą.
+      </p>
+      <a class="button" href="https://wa.me/34625032815" target="_blank" rel="noopener">
+        Umów bezpłatną rozmowę <span>→</span>
+      </a>
     </div>
-    <div class="hero-image" aria-label="Paulina przy biurku na Majorce"></div>
+    <div class="hero-image" role="img" aria-label="Paulina przy biurku na Majorce"></div>
   </section>
 
-  <section class="facts">
+  <section class="facts" aria-label="Najważniejsze informacje">
     <article>
-      <span class="fact-icon">
+      <span class="fact-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M12 21s6-5.3 6-11a6 6 0 1 0-12 0c0 5.7 6 11 6 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
       </span>
       <div><h3>Siedziba: Majorka</h3><p>Działamy stacjonarnie na wyspie.</p></div>
     </article>
     <article>
-      <span class="fact-icon">
+      <span class="fact-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M8 11 4 8l3-3 5 4m4 2 4-3-3-3-5 4m-3 2 3 3m3-3-3 3m-5-2 6 6a2 2 0 0 0 3-3l-6-6m0 0-2-2"/></svg>
       </span>
       <div><h3>Pozostała Hiszpania</h3><p>Realizujemy zlecenia indywidualnie. Koszty dojazdu i pobytu ustalamy osobno.</p></div>
     </article>
     <article>
-      <span class="fact-icon">
+      <span class="fact-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="16" rx="1"/><path d="M9 4V2h6v2M9 9h6M9 13h6M9 17h4"/></svg>
       </span>
       <div><h3>Raport po realizacji</h3><p>Jasne podsumowanie wykonanych działań.</p></div>
@@ -61,9 +79,7 @@
   </section>
 
   <section id="uslugi" class="services section-pad">
-    <div class="section-title">
-      <p>JAK MOGĘ POMÓC TWOJEJ FIRMIE</p>
-    </div>
+    <div class="section-title"><p>JAK MOGĘ POMÓC TWOJEJ FIRMIE</p></div>
     <div class="cards">
       <article>
         <div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-5 3-8 8-8s8 3 8 8"/></svg></div>
@@ -73,12 +89,12 @@
       <article>
         <div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></div>
         <h3>Wyszukuję<br>i znajduję</h3>
-        <p>Firmy, lokalizacje, biura, magazyny, dostawców i partnerów biznesowych.</p>
+        <p>Firmy, lokalizacje, biura, magazyny, dostawców i usługodawców.</p>
       </article>
       <article>
         <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg></div>
         <h3>Weryfikuję<br>i sprawdzam</h3>
-        <p>Oferty, nieruchomości, wykonawców i dokumenty. Dostarczam rzetelne informacje.</p>
+        <p>Oferty, lokale, wykonawców i dokumenty. Dostarczam rzetelne informacje.</p>
       </article>
       <article>
         <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-3 2a16 16 0 0 0 6 6l2-3 5 2v4c0 1-1 2-2 2C10 21 3 14 3 5c0-1 1-2 2-2Z"/></svg></div>
@@ -109,6 +125,7 @@
         <div><span>4</span><strong>Raport</strong><small>Otrzymujesz podsumowanie i efekty.</small></div>
       </div>
     </div>
+
     <div id="dlaczego" class="info-box">
       <p class="small-label">DLACZEGO PALMARES?</p>
       <h2>Współpraca, która daje spokój</h2>
@@ -123,7 +140,7 @@
   </section>
 
   <section id="o-mnie" class="coverage">
-    <div class="coverage-photo"></div>
+    <div class="coverage-photo" role="img" aria-label="Katedra w Palmie na Majorce"></div>
     <div class="coverage-copy">
       <p class="small-label">GDZIE DZIAŁAMY?</p>
       <h2>Majorka</h2>
@@ -131,7 +148,7 @@
       <p>To tutaj realizujemy większość zleceń i możemy działać bardzo szybko. Jesteśmy na miejscu.</p>
     </div>
     <div class="coverage-map" aria-hidden="true">
-      <svg viewBox="0 0 320 220"><path d="M35 70 61 47l37-1 16-15 24 12 16-6 31 19 26-3 15 24 28 6-6 25-20 12-3 25-23 8-17 24-31-6-25 11-21-21-19-5-10-22-23-8 7-25-16-17 8-21Z"/></svg>
+      <svg viewBox="0 0 320 220"><path d="M58 57l31-15 31 6 19-16 25 11 16-5 28 18 28-2 13 20 31 9-8 24-20 8-2 28-24 6-15 23-31-6-25 10-18-18-22-6-10-21-23-8 7-23-15-17 10-20Z"/></svg>
     </div>
     <div class="coverage-copy">
       <p class="small-label">POZOSTAŁE REGIONY HISZPANII</p>
@@ -142,12 +159,25 @@
 
   <section id="kontakt" class="dark-band">
     <blockquote>„Ty rozwijasz swój biznes.<br>My zajmujemy się resztą<br>w Hiszpanii.”</blockquote>
-    <div class="benefit"><span>⌖</span><p>Jestem na Majorce<br>i znam to miejsce.</p></div>
-    <div class="benefit"><span>◌</span><p>Komunikacja w języku<br>polskim i hiszpańskim.</p></div>
-    <div class="benefit"><span>▢</span><p>Dyskrecja i pełne<br>zaangażowanie.</p></div>
+
+    <div class="benefit">
+      <span class="benefit-icon"><svg viewBox="0 0 24 24"><path d="M12 21s6-5.3 6-11a6 6 0 1 0-12 0c0 5.7 6 11 6 11Z"/><circle cx="12" cy="10" r="2.4"/></svg></span>
+      <p>Jestem na Majorce<br>i znam to miejsce.</p>
+    </div>
+
+    <div class="benefit">
+      <span class="benefit-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z"/><path d="M8 9h8M8 12h5"/></svg></span>
+      <p>Komunikacja w języku<br>polskim i hiszpańskim.</p>
+    </div>
+
+    <div class="benefit">
+      <span class="benefit-icon"><svg viewBox="0 0 24 24"><rect x="6" y="10" width="12" height="10" rx="1"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span>
+      <p>Dyskrecja i pełne<br>zaangażowanie.</p>
+    </div>
+
     <div class="contact-box">
       <small>POROZMAWIAJMY</small>
-      <a href="tel:+34625032815">+34 625 032 815</a>
+      <a class="phone" href="tel:+34625032815">+34 625 032 815</a>
       <a href="mailto:paulinapaula720@gmail.com">paulinapaula720@gmail.com</a>
       <a class="whatsapp" href="https://wa.me/34625032815" target="_blank" rel="noopener">WhatsApp</a>
     </div>
@@ -161,5 +191,7 @@
   </div>
   <span>Majorka · Hiszpania</span>
 </footer>
+
+<a class="floating-whatsapp" href="https://wa.me/34625032815" target="_blank" rel="noopener" aria-label="Napisz przez WhatsApp">WA</a>
 </body>
 </html>
